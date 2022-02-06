@@ -4,3 +4,6 @@
 
 layout: home
 ---
+
+# Title
+So this is the homepage. It should be visible when accessing the GitHub pages site.
