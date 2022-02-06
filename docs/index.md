@@ -3,8 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: home
+title: Home
 ---
 
-# Title
 So this is the homepage. It should be visible when accessing the GitHub pages site.
