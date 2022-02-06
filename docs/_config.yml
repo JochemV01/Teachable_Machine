@@ -31,7 +31,7 @@ twitter_username: JJ0chem
 github_username:  JochemV01
 
 # Build settings
-theme: jekyll-theme-midnight
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 
