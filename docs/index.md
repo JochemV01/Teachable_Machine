@@ -5,7 +5,7 @@
 layout: home
 title: Home
 ---
-Do you want to use [Google's Teachable Machine](https://teachablemachine.withgoogle.com) in your project, you might have noticed that when exporting a model, some example `HTML` and `JavaScript` code is already provided. This is nice, however, it is written to be used with a webcam. If you want to use upload a file to be processed by the model instead, you will have to code it yourself. Without a lot of experience in JavaScript, this can be difficult. Which is why I made this guide, including an example file, to make it easier for others to implent this into their projects.
+<!--Do you want to use [Google's Teachable Machine](https://teachablemachine.withgoogle.com) in your project, you might have noticed that when exporting a model, some example `HTML` and `JavaScript` code is already provided. This is nice, however, it is written to be used with a webcam. If you want to use upload a file to be processed by the model instead, you will have to code it yourself. Without a lot of experience in JavaScript, this can be difficult. Which is why I made this guide, including an example file, to make it easier for others to implent this into their projects.-->
 
 <!--![Google Teachable Machine](https://teachablemachine.withgoogle.com/assets/img/contentpage/home/2017-version.jpg)-->
 
