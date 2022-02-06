@@ -31,10 +31,10 @@ twitter_username: JJ0chem
 github_username:  JochemV01
 
 # Build settings
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
+  # - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
