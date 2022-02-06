@@ -11,4 +11,4 @@ Do you want to use [Google's Teachable Machine](https://teachablemachine.withgoo
 
 To use Teachable Machine in your project: You need a couple of things. First and formost, you need a purpose, which I cannot help you with. But to give you a simple idea: It is possible to link a button to a specific page depending on the output of the model. In fact, this tutorial will show you how to do that. You also need to train and export a model, which is very simple. Finally, you need a webpage which allows for a file to be uploaded, which can be processed by your model.
 
-This tutoral consists of two parts: [Exporting the model]({% about.md %}) and [coding the webpage]({% coding.md %}).
+This tutoral consists of two parts: [Exporting the model]({% model.md %}) and [coding the webpage]({% coding.md %}).
