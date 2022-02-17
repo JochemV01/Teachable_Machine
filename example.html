@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Upload Image</title>
+    <!-- If you want to use a certain font, be sure to load it here. Here, I'm using the Google Fonts API. -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <!-- This is a link to the CSS file. -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,7 +22,7 @@
                 <img id="output" onload="image_uploaded()">
             </div>
         </label>
-        <div id="label-container" style="display: none"></div>
+        <div id="label-container" style="display: none;"></div>
 
         <!-- Grey button visible when no image is uploaded, when clicked it shows an alert message -->
         <button id="next-button-before-upload" class="nav-button" type="button" onclick="alert_noimage()"
@@ -40,6 +42,7 @@
             style="display: none;">Next Page</button>
     </div>
 
+    <!-- The following code is to change the "next" button, depending on if a file is uploaded or not. It's coded in JavaScript. -->
     <script>
         function alert_noimage() {
             alert("No image was uploaded! Please upload an image before you continue.");
@@ -56,6 +59,7 @@
         }
     </script>
 
+    <!-- The following code is the loading animation, it's coded in CSS. -->
     <style>
         .lds-ring {
             display: inline-block;
@@ -101,8 +105,11 @@
         }
     </style>
 
+    <!-- These are some links to JavaScript files by Google. This is required to make the Teachable Machine work. -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <!-- This is a link to your JavaScript file with the Teachable Machine code. -->
     <script type="text/javascript" src="Teachable-machine-script.js"></script>
 </body>
 
