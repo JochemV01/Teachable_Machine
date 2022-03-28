@@ -50,8 +50,7 @@ All I know is that this works and that it might be helpful to someone.
                     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
                 labelContainer.childNodes[i].innerHTML = classPrediction;
                 
-                // This code will save the result with a certainty of over 70%
-                // to a variable
+                // This code will save the result with a certainty of over 70% to a variable
     			certainty = parseFloat(prediction[i].probability.toFixed(2));
 			    if (certainty > 0.70) {
     				result = prediction[i].className;
