@@ -1,0 +1,106 @@
+html {
+    font-size: 16px;
+}
+.image-upload-background {
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    /* padding: 0.5rem; */
+    background-color: rgb(222, 222, 222);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 1rem;
+}
+.instruction-text {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    top: -1rem;
+    width: 20rem;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: #DA5409;
+}
+label {
+    position: absolute;
+    width: 13.44rem;
+    height: 2.94rem;
+    left: 3.31rem;
+    top: 8.56rem;
+    
+    background: #DA5409;
+    border-radius: 30px;
+}
+.upload-button-text {
+    position: absolute;
+    left: calc(50% - 191px/2 + 1px);
+    bottom: 0;
+    top: 0;
+    
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.uploaded-image {
+    position: absolute;
+    left: -2.625rem;
+    right: -2.625rem;
+    top: -5.375rem;
+    bottom: -3.56rem;
+}
+#output {
+    position: absolute;
+    max-width: 18.625rem;
+    max-height: 11.875rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.nav-button {
+    z-index: 1;
+    position: absolute;
+    background-color: #003EF5;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    right: 1rem;
+    bottom: 1rem;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.nav-button:hover {
+    background-color: rgba(0, 62, 245, 0.7);
+    cursor: pointer;
+}
+.loading {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #000000;
+}
