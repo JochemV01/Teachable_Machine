@@ -29,7 +29,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #url: "https://jochemv01.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://teachable-machine.jochem.tk"
 twitter_username: JJ0chem
-github_username:  "JochemV01/Teachable_Machine"
+github_username:  JochemV01
 
 # Build settings
 theme: minima
