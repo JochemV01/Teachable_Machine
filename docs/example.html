@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Image</title>
+    <!-- If you want to use a certain font, be sure to load it here. Here, I'm using the Google Fonts API. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <!-- This is a link to the CSS file. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="image-upload-background">
+        <p class="instruction-text">Upload a picture</p>
+        <label role="button" tabindex="0" style="cursor: pointer;" onclick="startLoading()">
+            <input type="file" id="file-selector" accept="image/png, image/jpg, image/jpeg, image/bmp"
+                style="display: none;">
+            <p class="upload-button-text">Select file to upload</p>
+            <p id="status"></p>
+            <div class="uploaded-image">
+                <img id="output" onload="image_uploaded()">
+            </div>
+        </label>
+        <div id="label-container" style="display: none;"></div>
+
+        <!-- Grey button visible when no image is uploaded, when clicked it shows an alert message -->
+        <button id="next-button-before-upload" class="nav-button" type="button" onclick="alert_noimage()"
+            style="background-color: gray;">Next Page</button>
+        <!-- Loading animation for when image is being uploaded and analyzed by the Teachable Machine -->
+        <div id="loading-animation" class="loading" style="display: none;">
+            <b><br />Uploading and <br />analyzing image...</b>
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- Blue button visible when image is uploaded and analyzed by the Teachable Machine, when clicked it goes to the next page -->
+        <button id="next-button-after-upload" class="nav-button" type="button" onclick="nextpage()"
+            style="display: none;">Next Page</button>
+    </div>
+
+    <!-- The following code is to change the "next" button, depending on if a file is uploaded or not. It's coded in JavaScript. -->
+    <script>
+        function alert_noimage() {
+            alert("No image was uploaded! Please upload an image before you continue.");
+        }
+        function startLoading() {
+            document.getElementById('next-button-before-upload').style.display = 'none';
+            document.getElementById('next-button-after-upload').style.display = 'none';
+            document.getElementById('loading-animation').style.display = 'inline-flex';
+        }
+        async function image_uploaded() {
+            await predict();
+            document.getElementById('loading-animation').style.display = 'none';
+            document.getElementById('next-button-after-upload').style.display = 'inline-flex';
+        }
+    </script>
+
+    <!-- The following code is the loading animation, it's coded in CSS. -->
+    <style>
+        .lds-ring {
+            display: inline-block;
+            position: relative;
+            /* right: 0; */
+            width: 64px;
+            height: 64px;
+        }
+
+        .lds-ring div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            /* right: 0; */
+            width: 51.2px;
+            height: 51.2px;
+            margin: 6.4px;
+            border: 6.4px solid #003EF5;
+            border-radius: 50%;
+            animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            border-color: #003EF5 transparent transparent transparent;
+        }
+
+        .lds-ring div:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+
+        .lds-ring div:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+
+        .lds-ring div:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+
+        @keyframes lds-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <!-- These are some links to JavaScript files by Google. This is required to make the Teachable Machine work. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <!-- This is a link to your JavaScript file with the Teachable Machine code. -->
+    <script type="text/javascript" src="Teachable-machine-script.js"></script>
+</body>
+
+</html>
