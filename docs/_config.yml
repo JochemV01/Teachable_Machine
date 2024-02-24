@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Teachable Machine Tutorial
-email: tm.tutorial@jochem.tk
+email: tm.tutorial@jjochem.nl
 description: >- # this means to ignore newlines until "baseurl:"
   This is a tutorial about how to make Teachable Machine work in your own webpage
   with a file-upload instead of the webcame. I did not find how to do this anywhere
@@ -27,7 +27,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   to you!
 #baseurl: "/Teachable_Machine" # the subpath of your site, e.g. /blog
 #url: "https://jochemv01.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://teachable-machine.jochem.tk"
+url: "https://teachable-machine.jjochem.nl"
 twitter_username: JJ0chem
 github_username:  JochemV01
 
